@@ -1,48 +1,30 @@
-# .
+# Vue 3 + TS Universal Composables
 
-This template should help get you started developing with Vue 3 in Vite.
+Тестовое задание по реализации универсальных хуков (composables) для валидации форм и работы с API.
 
-## Recommended IDE Setup
+## Функционал
+- **useFormValidation**: Универсальный валидатор с поддержкой Generic типов. Позволяет задавать любые правила для любого количества полей.
+- **useApi**: Реактивная обертка над Fetch API для обработки состояний Loading, Error и Success.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## Стек
+- Vue 3 (Composition API)
+- TypeScript
+- Vite
 
-## Recommended Browser Setup
+## Установка и запуск
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+1. **Клонируйте репозиторий:**
+   ```bash
+   git clone https://github.com/andrey27bn/vue-ts-composables-validation.git
 
-## Type Support for `.vue` Imports in TS
+2. **Перейдите в папку проекта:**
+   ```bash
+   cd vue-ts-composables-validation
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+3. **Установите зависимости:**
+   ```bash
+   npm install
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
+4. **Запустите проект в режиме разработки:**
+   ```bash
+   npm run dev
